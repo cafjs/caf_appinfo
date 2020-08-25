@@ -1,0 +1,4 @@
+{
+    "actualURL" : "https://storage.googleapis.com/cpu_mem_actual_dummy/stats.json",
+    "requestedURL" : "https://storage.googleapis.com/cpu_mem_egress_request_dummy/stats.json"
+}
