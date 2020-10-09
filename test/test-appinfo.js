@@ -74,7 +74,7 @@ module.exports = {
                         }
                     };
                 },
-               async function(cb) {
+                async function(cb) {
                     try {
                         await s1.reload().getPromise();
                         cb(null);
@@ -82,6 +82,10 @@ module.exports = {
                         test.ok(false, 'Got exception ' + err);
                         cb(err);
                     }
+                },
+                async function(cb) {
+                    // force a few cron reloads.
+                    setTimeout(cb, 4000);
                 },
                 async function(cb) {
                     try {
